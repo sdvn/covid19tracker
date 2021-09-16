@@ -14,15 +14,16 @@ Adafruit_SSD1306 display(OLED_RESET);
 #endif
 
 //Wifi
-const char* ssid = "SDvn";              //WIFI SSID Name
-const char* password =  "169kimma";        //WIFI Password
+const char* ssid = "xxx";              //WIFI SSID Name
+const char* password =  "xxx";        //WIFI Password
 
 //Thingspeak
 const char* host = "api.thingspeak.com";  //We read the data from this host                                   
-const int httpPortRead = 80;                                                                 
-const char* url1 = "/apps/thinghttp/send_request?api_key=9LT0AV70S3YH176X";     //Cases
-const char* url2 = "/apps/thinghttp/send_request?api_key=UC9LR9XNTQZACAYN";   //Today
-const char* url3 = "/apps/thinghttp/send_request?api_key=UOOFKD50MIQ5IYFX";   //Deaths
+const int httpPortRead = 80;
+//Edit Api thingspeak here
+const char* url1 = "/apps/thinghttp/send_request?api_key=xxxxxxxxxxxxxxxx";     //Cases
+const char* url2 = "/apps/thinghttp/send_request?api_key=xxxxxxxxxxxxxxxx";   //Cases Today
+const char* url3 = "/apps/thinghttp/send_request?api_key=xxxxxxxxxxxxxxxx";   //Deaths
 
 //Create a WiFi client and http client
 WiFiClient client;
