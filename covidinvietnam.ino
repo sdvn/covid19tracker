@@ -52,9 +52,13 @@ void loop() {
     Datacase();
     if (Cases != Data_Raw1) {
       Cases = Data_Raw1;
-      Datatoday();
-      Today=Data_Raw2;
-      }
+    }
+
+    Datatoday();
+    if (Today != Data_Raw2) {
+      Today = Data_Raw2;
+    }
+
     Datadeath();
     if (Deaths != Data_Raw3) {
       Deaths = Data_Raw3;
